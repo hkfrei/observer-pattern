@@ -1,0 +1,22 @@
+/* Add CSS styles here! */
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  align-content: space-between;
+}
+.counter__buttons {
+  border: 2px solid red;
+}
+.counter__button {
+  margin: 8px;
+}
+.observable {
+  border: 2px solid yellowgreen;
+  margin: 12px 0;
+  padding: 8px;
+}
+.count__container {
+  border: 2px solid blueviolet;
+  padding: 8px;
+}
