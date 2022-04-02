@@ -2,13 +2,12 @@
 
 > Use observables to notify subscribers when an event occurs.
 
-
 With the observer pattern, we can subscribe certain objects, the **observers**, to another object, called the **observable**. Whenever an event occurs, the observable notifies all its observers!
 It is a good choice in many cases. For instance, when multiple elements in an app, need to be informed about a state change or in general when something happened.
 ![image](https://user-images.githubusercontent.com/6850977/161396025-f3e29d72-fdbb-4e49-8078-95faaf13e17f.png)
 
-
 ## Anatomy of an observable
+
 An observable object usually contains 3 important parts:
 
 - `observers`: an array of observers (functions), that will get notified whenever a specific event occurs.
@@ -20,9 +19,20 @@ An observable object usually contains 3 important parts:
 
 You find an example implemetation in [/assets/index.js](/assets/index.js)
 
+## Pros
+
+Using the observer pattern is a great way to enforce **separation of concerns** and the single-responsibility principle.
+The observer objects are not tightly coupled to the observable object, and can be (de)coupled at any time.
+The observable object is responsible for monitoring the events, while the observers simply handle the received data.
+
+## Cons
+
+If an observer becomes to complex, it may cause performance issues when notifying all subscribers.
 
 ## Install the sample application
+
 > ✨ Bootstrapped with Create Snowpack App (CSA).
+
 ```
 git clone https://github.com/hkfrei/observer-pattern.git
 cd observer-pattern
