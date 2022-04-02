@@ -5,6 +5,10 @@ body {
   font-family: sans-serif;
   align-content: space-between;
 }
+#count {
+  font-weight: bold;
+  color: red;
+}
 .counter__buttons {
   border: 2px solid red;
 }
